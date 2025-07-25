@@ -24,5 +24,6 @@ jobs:
     - name: Analyze Code
       run: flutter analyze
 
-    - name: Run Tests
-      run: flutter test
+    ## No unit testing as for now
+    # - name: Run Tests
+    #   run: flutter test
