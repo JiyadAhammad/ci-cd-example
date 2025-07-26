@@ -23,9 +23,9 @@ jobs:
 
     - name: Analyze Code
       run: flutter analyze
-
-    - name: Run Tests
-      run: flutter test
+    # if we have unit , widget , intergration test then add this run comand also
+    # - name: Run Tests
+    #   run: flutter test
 
   build_ios:
     name: Build Flutter (Ios)
