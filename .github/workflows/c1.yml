@@ -46,6 +46,12 @@ jobs:
     - name: Clean Project
       run: flutter clean
 
+    - name: Install CocoaPods
+      run: |
+        cd ios
+        pod install
+        cd ..
+
     - name: Build Ios
       run: flutter build ios
 
@@ -68,5 +74,5 @@ jobs:
     - name: Clean Project
       run: flutter clean
 
-    - name: Build Ios
+    - name: Build Android
       run: flutter build appbundle
